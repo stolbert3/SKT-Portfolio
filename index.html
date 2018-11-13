@@ -5,7 +5,7 @@
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>Your page title here :)</title>
+  <title>Sydney Tolbert</title>
   <meta name="description" content="">
   <meta name="author" content="">
 
@@ -21,10 +21,11 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/custom.css">
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="icon" type="image/png">
 
 </head>
 <body>
@@ -32,10 +33,75 @@
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="container">
-    <div class="row">
-      <div class="one-half column" style="margin-top: 25%">
-        <h4>Basic Page</h4>
-        <p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content! If you need some help hit up the <a href="http://www.getskeleton.com">Skeleton documentation</a>.</p>
+    <section class="header">
+      <h2 class="title" style="margin-top: 25%">Sydney Tolbert</h2>
+    </section>
+  </div>
+  <nav class="navbar">
+      <div class="container">
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <a class="navbar-link" href="#about">About</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="#projects">Projects</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="#forms">Contact</a>
+          </li>
+        </ul>
+      </div>
+  </nav>
+    <div class="docs-section" id="about">
+        <h6 class="docs-header">About</h6>
+    </div>
+    <div class="docs-section" id="projects">
+        <h6 class="docs-header">Projects</h6>
+            <div class="container">
+              <div class="row">
+                <div class="one-half column">
+                    <a class="column-link" href="https://stolbert3.github.io/unit-4-game/">Crystal Collector</a>
+                </div>
+                <div class="one-half column">
+                    <a class="column-link" href="https://stolbert3.github.io/Word-Guess-Game/">Word Guess Game</a>
+                </div>
+              </div>
+              <div class="row">
+                  <div class="one-half column">
+                      <a class="column-link" href="https://stolbert3.github.io/TriviaGame/">Trivia Game</a>
+                    </div>
+                <div class="one-half column">
+                  <a class="column-link" href="https://stolbert3.github.io/Project1-Group13/">Cinecache</a>
+                </div>
+              </div>
+            </div>
+      </div>
+    <div class="docs-section" id="forms">
+      <h6 class="docs-header">Contact</h6>
+      <div class="docs-example docs-example-forms">
+        <form>
+          <div class="row">
+            <div class="six columns">
+              <label for="exampleEmailInput">Your Email</label>
+              <input class="u-full-width" type="email" placeholder="test@mailbox.com" id="exampleEmailInput">
+            </div>
+            <div class="six columns">
+              <label for="exampleRecipientInput">Reason for contacting</label>
+              <select class="u-full-width" id="exampleRecipientInput">
+                <option value="Option 1">Question 1</option>
+                <option value="Option 2">Admiration</option>
+                <option value="Option 3">Can I get your number?</option>
+              </select>
+            </div>
+          </div>
+          <label for="exampleMessage">Message</label>
+          <textarea class="u-full-width" placeholder="Hi Sydney..." id="exampleMessage"></textarea>
+          <label class="example-send-yourself-copy">
+            <input type="checkbox">
+            <span class="label-body">Send a copy to yourself</span>
+          </label>
+          <input class="button-primary" type="submit" value="Submit">
+        </form>
       </div>
     </div>
   </div>
